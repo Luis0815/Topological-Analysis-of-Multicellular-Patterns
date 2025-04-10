@@ -1,0 +1,5 @@
+./datos_admin/morfoespacio_dummy/centroides_tipo/persistencia/distancias/.ipynb_checkpoints/distancias_bottleneck_dim1-checkpoint.csv
+./datos_admin/morfoespacio_dummy/centroides_tipo/persistencia/distancias_h0+h1/distancias_wasserstein_comb.csv
+./datos_admin/morfoespacio_dummy/centroides_tipo/persistencia/distancias_h0+h1/distancias_bottleneck_comb.csv
+./datos_admin/morfoespacio_dummy/centroides_tipo/persistencia/distancias/visualizacion/.ipynb_checkpoints/clustermap_distancias_wasserstein_dim0_B-checkpoint.svg
+datos_admin/**/distancias/*checkpoint.csv

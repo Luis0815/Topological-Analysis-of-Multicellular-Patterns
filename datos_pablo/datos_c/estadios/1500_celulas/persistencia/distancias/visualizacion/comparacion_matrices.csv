@@ -1,0 +1,7 @@
+Comparación,Pearson,Spearman,Frobenius
+distancias_bottleneck_dim0 vs distancias_wasserstein_dim1,0.2701318343568091,0.34470709867095417,103004.0725770737
+distancias_bottleneck_dim0 vs distancias_wasserstein_dim0,0.24412500072016377,0.36004243683918896,480829.16365653253
+distancias_bottleneck_dim0 vs distancias_bottleneck_dim1,0.21514846304065918,0.11306864127579422,1564.1968649561045
+distancias_wasserstein_dim1 vs distancias_wasserstein_dim0,0.8804890431150272,0.8781362686372614,383348.3899726059
+distancias_wasserstein_dim1 vs distancias_bottleneck_dim1,0.11167169886029214,0.1177793188196895,101974.46069894804
+distancias_wasserstein_dim0 vs distancias_bottleneck_dim1,-0.024268777256406297,-0.01103758656452722,479965.5007452746
