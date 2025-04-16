@@ -22,9 +22,11 @@ El archivo `rips.py` permite generar automáticamente:
 
 - La visualización del **complejo de Rips**.
 - El **diagrama de persistencia** (dimensiones 0 y 1).
-- La **exportación de los resultados** a archivos `.csv` para análisis posteriores.
+- Archivos .csv con los datos de persistencia en tres columnas:
+  - dimension: dimensión topológica (0 o 1),
+  - birth: instante de nacimiento de la característica,
+  - death: instante de desaparición de la característica.
 
-- 
 
 ###  Uso
 ```bash
