@@ -17,11 +17,43 @@ El pipeline incluye los siguientes pasos:
 - Datos simulados variando la adhesion celular.
 - Datos extraídos de imágenes de cáncer incluyendo carcinoma, displasia de alto grado y sus respectivas regiones de estroma adyacente.
 
+---
 
-### Trabajo en Curso:
-- Definir parametros para la clasificacion.
-- Exploración de la disposición espacial de las células tumorales.
-- Intento de predecir la progresión de la enfermedad en función de los patrones espaciales identificados.
+### Estructura del Repositorio y Uso
+
+El repositorio se organiza en carpetas que agrupan los scripts de análisis y los conjuntos de datos. A continuación se describen las carpetas principales:
+
+#### 📁 `codigos_admin/`  
+Contiene los scripts necesarios para procesar los datos simulados generados con CompuCell3D. Incluye:
+- Conversión de archivos `.vtk` a `.csv`.  
+- Separación de datos por tipo celular (azul y rojo).  
+- Cálculo de diagramas de persistencia y distancias topológicas.  
+- Análisis y visualización de agrupamientos mediante TDA.  
+
+Cada subcarpeta incluye un `README.md` con instrucciones para ejecutar los scripts paso a paso.
+
+#### 📁 `codigos_pablo/`  
+Contiene scripts para el análisis de datos histológicos reales. Estos scripts permiten:
+- Procesar coordenadas celulares contenidas en archivos `.csv`.  
+- Aplicar TDA a muestras con hasta 18 tipos celulares distintos.  
+- Clasificar la organización espacial de distintas condiciones (carcinoma, displasia y regiones adyacentes).  
+
+Cada subcarpeta también contiene un `README.md` con instrucciones específicas de uso.
+
+#### 📁 `datos_admin/`  
+Incluye los datos simulados desde CompuCell3D:
+- Archivos `.vtk` originales.  
+- Archivos `.csv` con coordenadas celulares (todas las células, tipo azul, tipo rojo).  
+- Subcarpetas con los resultados del análisis TDA y clustering para cada conjunto.
+
+#### 📁 `datos_pablo/`  
+Contiene datos derivados de imágenes histológicas:
+- Archivos `.csv` con coordenadas celulares, clasificados por muestra.  
+- Grupos de datos que incluyen carcinoma, displasia y sus zonas adyacentes.  
+- Subcarpetas con los resultados del análisis TDA y clustering para cada conjunto.
+
+---
+
 
 ## Bibliografía
 
