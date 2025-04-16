@@ -65,12 +65,38 @@ python calcular_distancias.py /ruta/a/la/carpeta/persistencia/
 
 ---
 
-## 📊 Paso 3: Crear visualizaciones de Heatmap y Clustermap
+##  Paso 3: Crear visualizaciones de Heatmap y Clustermap
 
 El archivo `crear_visualizaciones.py` permite generar automáticamente **Heatmaps** y **Clustermaps** a partir de las matrices de distancias generadas en el Paso 2. Estas visualizaciones proporcionan una representación gráfica de las distancias entre los diferentes diagramas de persistencia.
 
-### 📌 Uso
+###  Uso
 
 ```bash
 python crear_visualizaciones.py /ruta/a/la/carpeta/distancias/
+```
+---
+
+# Análisis por grupo celular
+
+Además del análisis general, también es posible realizar el análisis topológico por **grupos de tipos celulares**. Esta segmentación permite observar patrones topológicos propios de distintas funciones inmunológicas o estructurales en el tejido.
+
+Actualmente, se consideran los siguientes grupos celulares:
+
+- **tumorales**: `tumor cells`, `Ki67+ tumor cells`
+- **linfoides**: `NK`, `B cells`, `effector CD8+ T cells`, `memory CD8+ T cells`, `CD4+ T cells`, `regulatory T cells`, `memory CD4+ T cells`
+- **mieloides**: `neutrophils`, `other APCs`, `dendritic cells`, `M1/M0 macrophages`, `M2 macrophages`
+- **no tumorales**: `endothelial cells`, `stromal cells`
+
+##  Paso 1: Calcular complejos de Rips y diagramas de persistencia
+
+Puedes ejecutar el script `rips_por_grupo.py`, que filtra automáticamente las células por grupo y genera los respectivos:
+
+- **Diagramas de persistencia (dim 0 y 1)**
+- **Visualización del complejo de Rips**
+- **Archivos `.csv` con los datos de persistencia por grupo**
+
+### Uso
+
+```bash
+python rips_por_grupo.py /ruta/a/centroides/
 
