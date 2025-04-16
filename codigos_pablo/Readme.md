@@ -46,3 +46,31 @@ simplex_tree = rips_complex.create_simplex_tree(max_dimension=2)
 rips_complex = gd.RipsComplex(points=puntos, max_edge_length=200)
 ```
   
+---
+
+##  Paso 2: Calcular distancias entre diagramas de persistencia
+
+El archivo `calcular_distancias.py` permite calcular automáticamente las distancias entre todos los pares de diagramas de persistencia generados en el Paso 1. Se calculan tanto:
+
+- **Distancias de Bottleneck** (dimensiones 0 y 1).
+- **Distancias de Wasserstein** (dimensiones 0 y 1).
+
+Los resultados se guardan como matrices de distancias en formato `.csv`.
+
+###  Uso
+
+```bash
+python calcular_distancias.py /ruta/a/la/carpeta/persistencia/
+```
+
+---
+
+## 📊 Paso 3: Crear visualizaciones de Heatmap y Clustermap
+
+El archivo `crear_visualizaciones.py` permite generar automáticamente **Heatmaps** y **Clustermaps** a partir de las matrices de distancias generadas en el Paso 2. Estas visualizaciones proporcionan una representación gráfica de las distancias entre los diferentes diagramas de persistencia.
+
+### 📌 Uso
+
+```bash
+python crear_visualizaciones.py /ruta/a/la/carpeta/distancias/
+
